@@ -1,0 +1,259 @@
+/* src/styles/HomePage.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Google Sans', sans-serif;
+  background-color: #fff;
+  color: #202124;
+  height: 100%;
+  width: 100%;
+}
+
+.meet-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.logo img {
+  height: 40px;
+  width: auto;
+  max-width: 100%;
+}
+
+
+.time {
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.icons span {
+  margin: 0 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.profile {
+  background-color: #ccc;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.meet-main {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  flex: 1;
+  min-width: 280px;
+  max-width: 50%;
+  padding: 20px;
+}
+
+.left-section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.left-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.actions input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 220px;
+  max-width: 100%;
+}
+
+.actions .new-meeting {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.actions .join-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e8eaed;
+  color: #5f6368;
+  cursor: not-allowed;
+}
+
+.learn-more {
+  color: #1a73e8;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.right-section {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.right-section img {
+  max-width: 200px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.right-section h2 {
+  margin-bottom: 10px;
+}
+/* --- Header Styling --- */
+/* --- Header Styling --- */
+.meet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-img {
+  height: 50px;
+  width: 80px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-actions a {
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Buttons */
+.outline-btn {
+  padding: 6px 12px;
+  border: 1px solid #1a73e8;
+  border-radius: 20px;
+  background: transparent;
+  color: #1a73e8;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.blue-btn {
+  padding: 6px 16px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* Responsive Styles */
+@media (max-width: 850px) {
+  .right-nav {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: none;
+  }
+
+  .right-nav.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
